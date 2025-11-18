@@ -1,24 +1,27 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+.Python
+env/
+venv/
 
-[project]
-name = "mindseye-binary-engine"
-version = "0.1.0"
-description = "A binary-level cognition engine for MindsEye. Decode, label, map, and traverse binary as time-patterns."
-authors = [
-    { name="Peace Thabiwa", email="your-email@example.com" }
-]
-readme = "README.md"
-requires-python = ">=3.9"
-license = { text = "MIT" }
+# Jupyter
+.ipynb_checkpoints/
 
-dependencies = [
-    "numpy",
-    "scipy",
-    "scikit-learn"
-]
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
 
-[tool.setuptools.packages.find]
-where = ["src"]
+# VS Code
+.vscode/
 
+# macOS
+.DS_Store
+
+# Temporary
+*.tmp
+*.log
